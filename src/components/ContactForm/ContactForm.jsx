@@ -12,8 +12,8 @@ import {
   FormLabel,
   ErrorMessage,
   FormButton,
-  BsFillPersonFill,
-  RiPhoneLine,
+  PersonIcon,
+  PhoneIcon,
 } from './ContactForm.styled';
 import { selectContacts } from 'redux/selectors';
 
@@ -68,7 +68,8 @@ export const ContactForm = () => {
           <FormField>
             <FormLabel htmlFor="name">Name</FormLabel>
               <Cover>
-                <Field name="name"
+                <Field
+                  name="name"
                   render={({ field }) => (
                     <Input 
                       {...field}
@@ -82,7 +83,7 @@ export const ContactForm = () => {
                      />
                     )}
                   />
-                <BsFillPersonFill />
+                <PersonIcon />
               </Cover>
           <ErrorMessage name="name" component="div" />
         </FormField>
@@ -91,20 +92,20 @@ export const ContactForm = () => {
            <Cover>
                 <Field
                   name="phone"
-                  render {({ field }) => (
+                  render={({ field }) => (
                     <Input
-                      {...field} 
-                      placeholder="+38-0xx-xxx-xx-xx" 
+                      {...field}
+                      placeholder="+38-0XX-XXX-XX-XX"
                       id="number"
-                        style={getStyles(
+                      style={getStyles(
                         formikProps.errors,
                         formikProps.touched,
                         'phone'
-                       )}
+                        )}
                       />
-                    )}
+                     )}
                   />
-            <RiPhoneLine />
+            <PhoneIcon />
           </Cover>
           <ErrorMessage name="phone" component="div" />
         </FormField>

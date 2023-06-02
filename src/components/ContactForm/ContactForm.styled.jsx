@@ -36,14 +36,14 @@ position: relative;
   }
 `;
 
-export const BsFillPersonFill = styled(BsFillPersonFill)`
+export const PersonIcon  = styled(BsFillPersonFill)`
   position: absolute;
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
 `;
 
-export const RiPhoneLine = styled(RiPhoneLine)`
+export const PhoneIcon  = styled(RiPhoneLine)`
   position: absolute;
   top: 50%;
   left: 10px;
