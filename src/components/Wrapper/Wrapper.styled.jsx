@@ -12,9 +12,11 @@ export const Div = styled.div`
 export const PrimaryTitle = styled.h1`
   margin-bottom: 20px;
   text-align: center;
+  color: darkblue;
 `;
 
 export const SecondaryTitle = styled.h2`
   margin-bottom: 20px;
   text-align: center;
+  color: darkblue;
 `;
